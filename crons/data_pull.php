@@ -14,6 +14,8 @@ $sql = "SELECT * FROM locations WHERE lat != \"\"";
 $result = $conn->query($sql);
 while($row = $result->fetch_assoc()) {
 
+echo "Pulling in data for location ID: ".$row['uid']."<br />";
+echo " - ".$row['name']."<br /><br />";
 
 $json = file_get_contents("https://api.darksky.net/forecast/".$config->apikey."/".$row['lat'].",".$row['lon']."?exclude=currently,minutely,alerts,flags&extend=hourly");
 $raw = json_decode($json);

@@ -62,7 +62,7 @@ function allowSubmit() {
  <label for=cloud_cover>Max cloud cover percentage</label>
  <input type=text name=cloud_cover value=5 placeholder="Max cloud cover percentage (5%)" size=50><br />
  <label for=days_ahead>How many days ahead should we notify?</label>
- <input type=text name=days_ahead value=7 placeholder="How many days ahead should we notify? (7)" size=50><br />
+ <input type=text name=days_ahead value=6 placeholder="How many days ahead should we notify? (6)" size=50><br />
  <label for=min_hours>Minimum number of hours of clear skies?</label>
  <input type=text name=min_hours value=4 placeholder="Minimum number of hours of clear skies? (4)" size=50><br />
  <label for=address>Select closest city:</label><br />
