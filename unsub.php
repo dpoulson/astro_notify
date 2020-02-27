@@ -6,7 +6,7 @@
 <body>
 <?php
 
-include "includes/config.php";
+include "settings.php";
 
 echo "<h1>".$config->site_name." - Unsub $id</h1>";
 

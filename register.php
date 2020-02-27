@@ -68,7 +68,7 @@ function allowSubmit() {
  <label for=address>Select closest city:</label><br />
 <?php
 
-include "includes/config.php";
+include "settings.php";
 
 ?>
 <select name="country"

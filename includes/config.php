@@ -1,11 +1,5 @@
 <?php
 
-// Database connection details, edit with the correct information
-$database_host = "localhost";
-$database_name = "astronotify";
-$database_user = "user";
-$database_pass = "password";
-
 // Read in the main admin changable config details from the database
 $conn = new mysqli($database_host, $database_user, $database_pass, $database_name);
 // Check connection

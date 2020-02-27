@@ -1,6 +1,6 @@
 <?php
 
-include "../includes/config.php";
+include "settings.php";
 
 echo "<option>Select State</option>";
 $sql = "SELECT DISTINCT(subcountry) FROM locations WHERE country = \"".$_REQUEST['country']."\" ORDER BY subcountry;";

@@ -1,6 +1,6 @@
 <?php
 
-include "../includes/config.php";
+include "settings.php";
 
 echo "<option>Select City</option>";
 $sql = "SELECT name,uid FROM locations WHERE subcountry = \"".$_REQUEST['subcountry']."\" ORDER BY name;";
