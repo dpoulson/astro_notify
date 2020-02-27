@@ -1,6 +1,6 @@
 <?php
 
-include("../includes/config.php");
+include("../includes/settings.php");
 
 // Clear forecast data
 //
@@ -50,4 +50,3 @@ foreach ($raw as $key=>$value) {
 
 }
 ?>
-

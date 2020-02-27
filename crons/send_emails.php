@@ -1,6 +1,6 @@
 <?php
 
-include("../includes/config.php");
+include("../includes/settings.php");
 
 $sql = "SELECT DISTINCT(location_uid) FROM users WHERE confirmed = 1 ORDER BY location_uid;";
 $result = $conn->query($sql);
@@ -91,4 +91,3 @@ while($location = $result->fetch_array()) {
 	echo "<hr>";
 }
 ?>
-

@@ -1,0 +1,57 @@
+/* Grid Layout */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 150px 1fr 100px;
+  grid-template-areas: "Title Buttons" "Main Main" "Footer Footer";
+  max-width: 1500px;
+  margin: auto;
+  width: 85%;
+  padding: 10px;
+}
+
+.Title {
+  grid-area: Title;
+  font-size: 110px;
+  font-style: oblique;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.Buttons {
+  grid-area: Buttons;
+  padding: 10px;
+}
+
+.Main {
+  grid-area: Main;
+  font-size: 16px;
+}
+
+.Footer { grid-area: Footer; }
+
+html {
+  background: black;
+  color: grey;
+}
+
+.sign_up {
+  background-color: blue;
+  border-radius: 8px;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.darksky {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}

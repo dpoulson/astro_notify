@@ -1,8 +1,10 @@
-<html>
- <head>
-  <title>Register</title>
-  <link href="./css/style.css" rel="stylesheet" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+<?
+
+include "header.php";
+include "settings.php";
+
+?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
 
 <script>
 
@@ -22,7 +24,7 @@ if (nameLength > 0 && emailLength > 0)
 function getState(val) {
 	$.ajax({
 	type: "POST",
-	url: "ajax/get_subcountries.php",
+	url: "ajax_get_subcountries.php",
 	data:'country='+val,
 	success: function(data){
 		$("#state-list").html(data);
@@ -35,7 +37,7 @@ function getState(val) {
 function getCity(val) {
 	$.ajax({
 	type: "POST",
-	url: "ajax/get_cities.php",
+	url: "ajax_get_cities.php",
 	data:'subcountry='+val,
 	success: function(data){
 		$("#city-list").html(data);
@@ -66,11 +68,6 @@ function allowSubmit() {
  <label for=min_hours>Minimum number of hours of clear skies?</label>
  <input type=text name=min_hours value=4 placeholder="Minimum number of hours of clear skies? (4)" size=50><br />
  <label for=address>Select closest city:</label><br />
-<?php
-
-include "settings.php";
-
-?>
 <select name="country"
                 id="country-list" class="demoInputBox"
                 onchange="getState(this.value);">
@@ -96,7 +93,7 @@ echo "</select><br />";
    <option value="">Select City</option>
  </select><br />
 
- <label for=gdpr>Please tick this box to acknowledge you have read and agree to the 
+ <label for=gdpr>Please tick this box to acknowledge you have read and agree to the
  <a href="gdpr.php">Terms and conditions, and the GDPR policy</a> for this site</lable><br />
  <input type=checkbox name=gdpr><br />
  <input id=submit name=submit type=submit value="Submit">
