@@ -1,6 +1,6 @@
 <?php
 
-include("includes/config.php");
+include("settings.php");
 
 $location = $_REQUEST['location'];
 

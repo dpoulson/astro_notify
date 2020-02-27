@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-include "includes/config.php";
+include "settings.php";
 
 ?>
 <head>
@@ -74,7 +74,7 @@ include "includes/config.php";
 </ol>
 <h4>3) Mailing list</h4>
 <ol>
-<li>We will keep users email addresses for sending out regular updates on clear skies for astronomical viewings in their area, and very few administration messages.</li> 
+<li>We will keep users email addresses for sending out regular updates on clear skies for astronomical viewings in their area, and very few administration messages.</li>
 <li>When people sign up to the list we will explain how their details will be used, how they will be stored, and that they may ask to be removed from the list at any time. We will ask them to give separate consent to receive publicity and fundraising messages, and will only send them messages which they have expressly consented to receive.</li>
 <li>We will not use the mailing list in any way that the individuals on it have not explicitly consented to.</li>
 </ol>

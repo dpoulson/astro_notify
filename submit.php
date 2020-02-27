@@ -7,7 +7,7 @@
 
 <?
 
-include "includes/config.php";
+include "settings.php";
 
 $email = test_input($_REQUEST["email"]);
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -54,9 +54,9 @@ if ($check_email->num_rows == 0) {
 
 
         $success = mail($to, $subject, $message, $headers);
-        
+
         echo $message;
-	 
+
 	echo "Success: ".$success;
 
 
